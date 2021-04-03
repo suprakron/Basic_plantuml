@@ -1,0 +1,23 @@
+@startuml
+actor Man #pink;line:red;line.bold;text:red
+Man ---> (call woman) #green;line.dashed;text:red
+Man --> (Want to call girl friend) : Must sneak the boss
+Man ---> (i haven't called my girl friend for a long time.)#line:red;line.bold;text:red  : red bold
+
+(Want to call girl friend) ---> Boss : In order to call your girl friend , you have to secretly get your Boss
+actor woman #pink;line:green;line.bold;text:green
+:woman: <--- (Want to call girl friend) :  miss u
+
+:woman: ---> (Secretly have a gig) :  Sex Girlfriend
+
+woman ---> (I miss my girl friend) #line:red;line.bold;text:red  
+
+(Secretly have a gig) ---> Man2
+
+Man2 ---> Girl2
+
+Girl2 ---> (Secretly a gig with the Boss) #green;line.dashed;text:blue
+(Secretly a gig with the Boss) ---> Boss
+
+Boss --->(Boss was afraid of his) #green;line.dashed;text:red
+@enduml
