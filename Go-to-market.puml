@@ -1,0 +1,11 @@
+@startuml
+actor Man #pink;line:red;line.bold;text:red
+Man ---> (Go to the market to buy vegetables for her) #green;line.dashed;text:red
+actor Mother #pink;line:blue;line.bold;text:blue
+(Go to the market to buy vegetables for her) ---> Mother
+Mother ---> (Cook for dad)
+(Cook for dad)---> Father
+Father ---> (Father went to the younger brother's school)
+(Father went to the younger brother's school) ----> brother
+brother ---> Man : My brother aiso bought toys
+@enduml
