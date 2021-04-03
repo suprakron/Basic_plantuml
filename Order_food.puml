@@ -1,0 +1,11 @@
+@startuml
+actor mind #pink;line:red;line.bold;text:red
+mind ---> (order food through food panda) #green;line.dashed;text:red
+(order food through food panda) ---> cook
+cook ---> (Beef steak) #blue;line.dashed;text:pink
+cook ---> (Caviar) #orange;line.dashed;text:black
+cook ---> (chocolate) #purple;line.dashed;text:yellow
+mind <--- cook : what kind of delivery to be provided
+cook ---> lineman : To deliver the food to the customer
+lineman ---> mind : Come to deliver food
+@enduml
